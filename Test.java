@@ -4,7 +4,8 @@ class Test {
 
    public static void main (String args[])
    {
-        Items itObj = new Items();
+        //Items itObj = new Items();//se modifica la variable itObj para identificar que es para llamar las funciones 
+        Items functionObj = new Items();
         String input;
         int sInt;//
     while (true)
@@ -17,25 +18,25 @@ class Test {
         switch (sInt) {
         
             case 1:
-                   itObj.addRecord();
+            functionObj.addRecord();//se modifica la variable
                    break;
                    
             case 2:
-                   itObj.searchRecord();
+            functionObj.searchRecord();//se modifica la variable
                    break;
                    //termina el programa al cancelar una funcion
             case 3:
-                   itObj.deleteRecord();
+            functionObj.deleteRecord();//se modifica la variable
                    break;
                    
             case 4:
             	
-                itObj.modifyRecord();
+            functionObj.modifyRecord();//se modifica la variable
                 break;
                 
             case 5:
                 
-                itObj.allRecord();
+            functionObj.allRecord();//se modifica la variable
                 break;
                 
             case 6:
