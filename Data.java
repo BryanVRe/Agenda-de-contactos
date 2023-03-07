@@ -3,21 +3,19 @@ import javax.swing.*;
 class Data {
     //nombre de variables no definidas con lo solicitado
     // no mete las variables del mismo tipo dedato en una sola linea de codigo(no simplifica)
-        String n;
-        String a;
-        String pNum;
+        String name, address,phone; 
 //parameterized constructor
-    public Data(String n, String a, String p) {
+    public Data(String name, String address, String phone) {
     	
-         this.n = n;
-		 this.a = a;
-		 this.pNum = p;
+         this.name = name;
+		 this.address = address;
+		 this.phone = phone;
        }
     
 //method for displaying person record on GUI 
     
     public void print( ) {
-          JOptionPane.showMessageDialog(null, "Name: " + n + "\n Address: " +a + "\n phone no: " + pNum);
+          JOptionPane.showMessageDialog(null, "Name: " + name + "\n Address: " + address + "\n phone no: " + phone);
     }
    
 }
